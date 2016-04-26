@@ -1,0 +1,35 @@
+{
+    "name": "phillippan/welldone",
+    "license": "Apache-2.0",
+    "type": "magento-module",
+    "description": "Welldone Theme Files",
+    "homepage": "http://www.floralland.com.au",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "3.0.*"
+    },
+    "authors":[{
+        "name": "Phillip Pan"
+    }],
+    "extra": {
+        "map": [
+            ["app/code/community/Zeon/*", "app/code/community/Zeon/"],
+            ["app/code/local/*", "app/code/local/"],
+            ["app/design/adminhtml/default/default/template/*", "app/design/adminhtml/default/default/template/"],
+            ["app/design/adminhtml/default/default/locale/*", "app/design/adminhtml/default/default/locale/"],
+            ["app/design/adminhtml/default/default/layout/*", "app/design/adminhtml/default/default/layout/"],
+            ["app/design/frontend/base/default/layout/*", "app/design/frontend/base/default/layout/"],
+            ["app/design/frontend/base/default/template/*", "app/design/frontend/base/default/template/"],
+            ["app/design/frontend/smartwave/*", "app/design/frontend/smartwave/"],
+            ["app/etc/modules/*", "app/etc/modules/"],
+            ["js/timer.js", "js/timer.js"],
+            ["js/granada/*", "js/granada/"],
+            ["js/smartwave/*", "js/smartwave/"],
+            ["lib/recaptcha/*", "lib/recaptcha/"],
+            ["media/manufacturer/*", "media/manufacturer/"],
+            ["media/smartwave/*", "media/smartwave/"],
+            ["media/wysiwyg/*", "media/wysiwyg/"],
+            ["skin/adminhtml/default/default/blog/*", "skin/adminhtml/default/default/blog/"],
+            ["skin/frontend/smartwave/*", "skin/frontend/smartwave/"]
+        ]
+    }
+}
