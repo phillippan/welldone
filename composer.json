@@ -14,10 +14,15 @@
         "map": [
             ["app/code/community/Codnitive/*", "app/code/community/Codnitive/"],
             ["app/code/community/Inchoo/Prevnext/*", "app/code/community/Inchoo/Prevnext/"],
+            ["app/code/community/IWD/*", "app/code/community/IWD/"],
             ["app/code/local/*", "app/code/local/"],
+            ["app/design/adminhtml/*", "app/design/adminhtml/"],
             ["app/design/frontend/*", "app/design/frontend/"],
             ["app/etc/modules/*", "app/etc/modules/"],
+            ["app/locale/*", "app/locale/"],
+            ["js/iwd/*", "js/iwd/"],
             ["media/*", "media/"],
+            ["skin/adminhtml/default/default/*", "skin/adminhtml/default/default/"],
             ["skin/frontend/welldone/*", "skin/frontend/welldone/"]
         ]
     }
