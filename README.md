@@ -1,2 +1,2 @@
-#welldone
-http://bumer.tonytemplates.com/welldone/demo/
+#Welldone
+[**Theme Demo**](http://bumer.tonytemplates.com/welldone/demo/)
