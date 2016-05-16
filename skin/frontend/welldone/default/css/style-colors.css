@@ -165,10 +165,10 @@
   }
 }
 .header--transparent .navbar.navbar-wd {
-  background-color: transparent;
+  background-color: #000;
 }
 .header--semi-transparent .navbar.navbar-wd {
-  background-color: transparent;
+  background-color: #000;
 }
 @media (max-width: 767px) {
   .navbar.navbar-wd.stuck {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Magento
+ * Magento.
  *
  * NOTICE OF LICENSE
  *
@@ -19,35 +19,38 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    design
- * @package     base_default
+ *
  * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
 /**
- * Shoping cart sidebar
+ * Shoping cart sidebar.
  *
  * @see Mage_Checkout_Block_Cart_Sidebar
  */
-
 ?>
 <?php
-    $theme=Mage::helper('welldone');
+    $theme = Mage::helper('welldone');
     if (!$theme->getConfigOption('general/catalog_mode')):
     $_cartQty = $this->getSummaryCount();
-    if(empty($_cartQty))$_cartQty=0;?>
+    if (empty($_cartQty)) {
+        $_cartQty = 0;
+    }?>
         <span class="header__cart__indicator hidden-xs"><?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?></span>
         <div class="dropdown pull-right">
-            <a href="#" class="btn dropdown-toggle btn--links--dropdown header__cart__button header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-bag-alt"></span><span class="badge badge--menu"><?php echo $_cartQty ?></span></a>
+            <a href="#" class="btn dropdown-toggle btn--links--dropdown header__cart__button header__dropdowns__button" data-toggle="dropdown"><span class="icon icon-flowers"></span><span class="badge badge--menu"><?php echo $_cartQty ?></span></a>
             <div class="dropdown-menu animated fadeIn shopping-cart" role="menu">
-                <div class="shopping-cart__settings"><a href="<?php echo Mage::helper('checkout/cart')->getCartUrl(); ?>" class="icon icon-bag-alt" title="<?php echo $this->__('View shopping cart') ?>"></a></div>
+                <div class="shopping-cart__settings"><a href="<?php echo Mage::helper('checkout/cart')->getCartUrl(); ?>" class="icon icon-flowers" title="<?php echo $this->__('View shopping cart') ?>"></a></div>
                 <div class="shopping-cart__top text-uppercase"><?php echo $this->__('Recently added item(s)') ?>
-                    (<?php if ($_cartQty==1): ?><?php echo $this->__('1 item') ?><?php else: ?><?php if(empty($_cartQty))$_cartQty=0?><?php echo $this->__('%s items', $_cartQty) ?><?php endif ?>)
+                    (<?php if ($_cartQty == 1): ?><?php echo $this->__('1 item') ?><?php else: ?><?php if (empty($_cartQty)) {
+    $_cartQty = 0;
+}?><?php echo $this->__('%s items', $_cartQty) ?><?php endif ?>)
                 </div>
                 <?php $_items = $this->getRecentItems() ?>
-                <?php if(count($_items)): ?>
+                <?php if (count($_items)): ?>
                     <ul>
-                        <?php foreach($_items as $_item): ?>
+                        <?php foreach ($_items as $_item): ?>
                             <?php echo $this->getItemHtml($_item) ?>
                         <?php endforeach; ?>
                     </ul>
