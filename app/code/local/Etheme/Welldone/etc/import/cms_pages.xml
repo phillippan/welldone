@@ -7,7 +7,7 @@
             <root_template>one_column</root_template>
             <content><![CDATA[
             {{block type="cms/block" block_id="wd_slider"}}
-{{block type="catalog/product_list" category_id="18" block_name="Eyewear"  template="carousel/products_horizontal.phtml" column_count="4"}}
+{{block type="catalog/product_list" category_id="18" block_name="New Arrivals"  template="carousel/products_horizontal.phtml" column_count="4"}}
 {{block type="cms/block" block_id="wd_categories"}}
 <section class="content content--fill">
       <div class="container">
@@ -741,7 +741,7 @@
                         </div>
                   </div>
                 </section>
-                <!-- End Content section --> 
+                <!-- End Content section -->
             ]]></content>
             <sort_order>1</sort_order>
             <is_active>1</is_active>
